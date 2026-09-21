@@ -24,6 +24,9 @@ const observer = new IntersectionObserver((entries) => entries.forEach((entry) =
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
+const featuredReelUrl = 'https://www.instagram.com/reel/Ddhx7JYgLXB/?stkn=ZW0yNDZxa3Vqajc4';
+const featuredReelEmbedUrl = 'https://www.instagram.com/reel/Ddhx7JYgLXB/embed';
+
 const loadReel = document.querySelector('#load-reel');
 const reelFrame = document.querySelector('#reel-frame');
 const reelPlaceholder = document.querySelector('#reel-placeholder');
@@ -31,11 +34,12 @@ const reelPlaceholder = document.querySelector('#reel-placeholder');
 loadReel?.addEventListener('click', () => {
   if (!reelFrame.querySelector('iframe')) {
     const iframe = document.createElement('iframe');
-    iframe.src = 'https://www.instagram.com/reel/Ddhx7JYgLXB/embed';
+    iframe.src = featuredReelEmbedUrl;
     iframe.title = 'Apresentação de Mateus Viana no Instagram';
     iframe.allowFullscreen = true;
     iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
-    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-presentation');
+    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-presentation allow-popups');
+    iframe.dataset.source = featuredReelUrl;
     reelFrame.appendChild(iframe);
   }
 
