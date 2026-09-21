@@ -21,7 +21,7 @@
     <a class="brand" href="#inicio" aria-label="Mateus Viana — início">MV<span>.</span></a>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" aria-label="Navegação principal">
-      <a href="#sobre">O artista</a><a href="#numeros">Números</a><a href="#shows">Shows</a><a href="#momentos">Momentos</a><a href="#contato" class="nav-cta">Contratar</a>
+      <a href="#sobre">O artista</a><a href="#depoimentos">Opiniões</a><a href="#numeros">Números</a><a href="#shows">Shows</a><a href="#video">Vídeo</a><a href="#contato" class="nav-cta">Contratar</a>
     </nav>
   </header>
 
@@ -41,15 +41,20 @@
         <div class="photo-frame"><img src="assets/mateus-violao.webp" alt="Mateus Viana sentado com um violão" fetchpriority="high"></div>
         <figcaption>Do palco para perto de você.</figcaption>
       </figure>
-      <div class="hero-index" aria-hidden="true">01 — 05</div>
+      <div class="hero-index" aria-hidden="true">01 — 07</div>
     </section>
 
-    <section class="marquee" aria-label="Destaques"><div><span>SERTANEJO AO VIVO</span><i>✦</i><span>+8 ANOS DE ESTRADA</span><i>✦</i><span>REPERTÓRIO VERSÁTIL</span><i>✦</i><span>SERTANEJO AO VIVO</span></div></section>
+    <section class="marquee" aria-label="Destaques">
+      <div class="marquee-track">
+        <div class="marquee-group"><span>SERTANEJO AO VIVO</span><i>✦</i><span>+8 ANOS DE ESTRADA</span><i>✦</i><span>REPERTÓRIO VERSÁTIL</span><i>✦</i></div>
+        <div class="marquee-group" aria-hidden="true"><span>SERTANEJO AO VIVO</span><i>✦</i><span>+8 ANOS DE ESTRADA</span><i>✦</i><span>REPERTÓRIO VERSÁTIL</span><i>✦</i></div>
+      </div>
+    </section>
 
     <section class="about section" id="sobre">
       <div class="section-marker">02 / O artista</div>
       <div class="about-grid">
-        <div class="about-title reveal"><p class="eyebrow">Quem sou eu</p><h2>História construída no <em>palco.</em></h2></div>
+        <div class="about-title reveal"><p class="eyebrow">Quem sou eu</p><h2>História construída no palco.</h2></div>
         <div class="about-body reveal">
           <p class="lead">Há mais de oito anos, Mateus Viana faz da música o ponto de encontro entre histórias, pessoas e momentos.</p>
           <p>Com trajetória especialmente ligada à cena sertaneja, desenvolveu uma identidade marcada por experiência, versatilidade e presença. Sua vivência em diferentes palcos o preparou para criar apresentações próximas do público — da atmosfera intimista ao evento de grande energia.</p>
@@ -59,8 +64,26 @@
       </div>
     </section>
 
+    <section class="proof section" id="depoimentos">
+      <div class="section-marker light">03 / Opiniões reais</div>
+      <div class="proof-head reveal">
+        <div><p class="eyebrow">Quem viveu, recomenda</p><h2>O público<br><em>confirma.</em></h2></div>
+        <p>Mensagens e comentários reais de quem já contratou ou prestigiou uma apresentação.</p>
+      </div>
+      <div class="proof-grid">
+        <figure class="proof-shot proof-shot--large reveal"><img src="assets/depoimento-marcos.webp" alt="Mensagem de Marcos elogiando o repertório, o profissionalismo e a energia do show" loading="lazy"></figure>
+        <figure class="proof-shot proof-shot--large reveal"><img src="assets/depoimento-celia.webp" alt="Mensagem de Célia agradecendo pela apresentação em seu aniversário de 60 anos" loading="lazy"></figure>
+        <div class="proof-comments reveal">
+          <figure class="proof-shot"><img src="assets/comentario-taniguchi.webp" alt="Comentário: Excelente show, repertório incrível, arrasou demais" loading="lazy"></figure>
+          <figure class="proof-shot"><img src="assets/comentario-eds.webp" alt="Comentário: Show demais, só pelo próximo" loading="lazy"></figure>
+          <figure class="proof-shot"><img src="assets/comentario-ca-miula.webp" alt="Comentário: Foi incrível" loading="lazy"></figure>
+          <figure class="proof-shot"><img src="assets/comentario-liine.webp" alt="Comentário: Bom demais" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
     <section class="numbers section" id="numeros">
-      <div class="section-marker light">03 / Alcance</div>
+      <div class="section-marker light">04 / Alcance</div>
       <div class="numbers-head reveal"><p class="eyebrow">Música que circula</p><h2>Dos palcos<br>para as telas.</h2></div>
       <div class="stats">
         <article><strong>12,5K</strong><span>views no YouTube</span></article>
@@ -76,7 +99,7 @@
     </section>
 
     <section class="shows section" id="shows">
-      <div class="section-marker">04 / Apresentações</div>
+      <div class="section-marker">05 / Apresentações</div>
       <div class="shows-intro reveal"><p class="eyebrow">Para cada ocasião</p><h2>O formato certo.<br><em>A mesma entrega.</em></h2></div>
       <div class="show-list">
         <article><span>01</span><div><h3>Shows e casas noturnas</h3><p>Repertório sertanejo envolvente e presença para movimentar a noite.</p></div><a href="#contato" aria-label="Orçamento para shows e casas noturnas">↗</a></article>
@@ -86,32 +109,20 @@
       <figure class="stage-image reveal"><img src="assets/palco.webp" alt="Músicos tocando durante uma apresentação" loading="lazy"><figcaption>Ao vivo, de verdade.</figcaption></figure>
     </section>
 
-    <section class="moments section" id="momentos">
-      <div class="section-marker light">05 / Momentos</div>
-      <div class="moments-head reveal">
-        <div><p class="eyebrow">Quem viveu, recomenda</p><h2>O show acontece<br><em>junto com o público.</em></h2></div>
-        <p>Mais que repertório, cada apresentação é feita de presença, energia e gente cantando junto.</p>
-      </div>
-      <div class="social-proof">
-        <div class="reel-card reveal">
-          <div class="reel-frame"><iframe src="https://www.instagram.com/reel/DbJZYBCg3ZH/embed" title="Apresentação de Mateus Viana no Instagram" loading="lazy" allowfullscreen></iframe></div>
-          <div class="reel-caption"><span>Vídeo em destaque</span><a href="https://www.instagram.com/reel/DbJZYBCg3ZH/" target="_blank" rel="noopener">Assistir no Instagram ↗</a></div>
-        </div>
-        <div class="testimonials reveal" aria-label="Depoimentos do público">
-          <blockquote class="featured-quote"><p>“Você superou nossas expectativas, animou todo mundo e deixou o ambiente ainda mais especial. Parabéns pelo talento, profissionalismo e energia contagiante!”</p><div class="quote-author"><strong>Marcos</strong><span>Contratante de evento</span></div></blockquote>
-          <div class="short-quotes">
-            <blockquote><p>“Todo o repertório estava maravilhoso e todos os convidados adoraram e participaram.”</p><cite>Célia — aniversário de 60 anos</cite></blockquote>
-            <blockquote><p>“Excelente show! Repertório incrível! Arrasou demais.”</p><cite>@taniguchi.nic</cite></blockquote>
-            <blockquote><p>“Foi incrível!”</p><cite>@ca.miula</cite></blockquote>
-            <blockquote><p>“Show demais. Só pelo próximo!”</p><cite>@eds_073</cite></blockquote>
-          </div>
+    <section class="video-section section" id="video">
+      <div class="section-marker light">06 / Em cena</div>
+      <div class="video-layout">
+        <div class="video-copy reveal"><p class="eyebrow">Vídeo em destaque</p><h2>A energia<br><em>ao vivo.</em></h2><p>Use o botão abaixo para carregar o Reel dentro desta página. O Instagram só será aberto pelo link secundário.</p><button class="button primary" id="load-reel" type="button">Reproduzir vídeo</button></div>
+        <div class="reel-card reveal" id="reel-card">
+          <div class="reel-placeholder" id="reel-placeholder"><span aria-hidden="true">▶</span><strong>Mateus Viana ao vivo</strong><small>O vídeo será carregado aqui</small></div>
+          <div class="reel-frame" id="reel-frame" hidden></div>
+          <div class="reel-caption"><span>Reel oficial</span><a href="https://www.instagram.com/reel/Ddhx7JYgLXB/" target="_blank" rel="noopener">Abrir no Instagram ↗</a></div>
         </div>
       </div>
-      <div class="gallery-soon reveal"><span>Novas fotos de shows em breve</span><p>Acompanhe os próximos registros e bastidores pelo Instagram.</p><a class="inline-link" href="https://www.instagram.com/mateusvianacantor" target="_blank" rel="noopener">Ver mais momentos <span>↗</span></a></div>
     </section>
 
     <section class="contact section" id="contato">
-      <div class="contact-copy reveal"><div class="section-marker light">06 / Contato</div><p class="eyebrow">Agenda e contratação</p><h2>Leve esse show<br>para o seu <em>evento.</em></h2><p>Conte um pouco sobre a ocasião. A mensagem será organizada e enviada diretamente pelo WhatsApp.</p></div>
+      <div class="contact-copy reveal"><div class="section-marker light">07 / Contato</div><p class="eyebrow">Agenda e contratação</p><h2>Leve esse show<br>para o seu <em>evento.</em></h2><p>Conte um pouco sobre a ocasião. A mensagem será organizada e enviada diretamente pelo WhatsApp.</p></div>
       <form class="booking" id="booking-form">
         <label>Seu nome<input name="nome" autocomplete="name" required placeholder="Como podemos chamar você?"></label>
         <div class="form-row"><label>Tipo de evento<select name="evento" required><option value="">Selecione</option><option>Bar ou restaurante</option><option>Festa particular</option><option>Evento corporativo</option><option>Casa noturna</option><option>Outro</option></select></label><label>Cidade<input name="cidade" required placeholder="Cidade / UF"></label></div>
