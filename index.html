@@ -112,11 +112,15 @@
     <section class="video-section section" id="video">
       <div class="section-marker light">06 / Em cena</div>
       <div class="video-layout">
-        <div class="video-copy reveal"><p class="eyebrow">Vídeo em destaque</p><h2>A energia<br><em>ao vivo.</em></h2><p>Use o botão abaixo para carregar o Reel dentro desta página. O Instagram só será aberto pelo link secundário.</p><button class="button primary" id="load-reel" type="button">Reproduzir vídeo</button></div>
+        <div class="video-copy reveal"><p class="eyebrow">Vídeo em destaque</p><h2>A energia<br><em>ao vivo.</em></h2><p>Assista à apresentação diretamente nesta página, com reprodução independente do Instagram.</p></div>
         <div class="reel-card reveal" id="reel-card">
-          <div class="reel-placeholder" id="reel-placeholder"><span aria-hidden="true">▶</span><strong>Mateus Viana ao vivo</strong><small>O vídeo será carregado aqui</small></div>
-          <div class="reel-frame" id="reel-frame" hidden></div>
-          <div class="reel-caption"><span>Reel oficial</span><a href="https://www.instagram.com/reel/Ddhx7JYgLXB/?stkn=ZW0yNDZxa3Vqajc4" target="_blank" rel="noopener">Abrir no Instagram ↗</a></div>
+          <div class="reel-frame">
+            <video controls playsinline preload="metadata" aria-label="Apresentação de Mateus Viana ao vivo">
+              <source src="assets/mateus-viana-ao-vivo.mp4" type="video/mp4">
+              Seu navegador não oferece suporte à reprodução deste vídeo.
+            </video>
+          </div>
+          <div class="reel-caption"><span>Apresentação ao vivo</span><a href="https://www.instagram.com/reel/Ddhx7JYgLXB/?stkn=ZW0yNDZxa3Vqajc4" target="_blank" rel="noopener">Ver também no Instagram ↗</a></div>
         </div>
       </div>
     </section>
