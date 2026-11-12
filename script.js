@@ -30,6 +30,6 @@ document.querySelector('#booking-form').addEventListener('submit', (event) => {
   const date = data.get('data')
     ? new Date(`${data.get('data')}T12:00:00`).toLocaleDateString('pt-BR')
     : 'A definir';
-  const message = `Olá! Gostaria de solicitar um orçamento para uma apresentação de Mateus Viana.\n\nNome: ${data.get('nome')}\nTipo de evento: ${data.get('evento')}\nCidade: ${data.get('cidade')}\nData: ${date}\nPúblico estimado: ${data.get('publico') || 'A definir'}\nInformações adicionais: ${data.get('mensagem') || 'Não informado'}`;
+  const message = `Olá! Gostaria de solicitar um orçamento para uma apresentação de Mateus Viana.\n\nNome: ${data.get('nome')}\nFormato do show: ${data.get('formato')}\nFaixa de investimento: ${data.get('orcamento')}\nTipo de evento: ${data.get('evento')}\nCidade: ${data.get('cidade')}\nData: ${date}\nPúblico estimado: ${data.get('publico') || 'A definir'}\nInformações adicionais: ${data.get('mensagem') || 'Não informado'}`;
   window.open(`https://wa.me/5511963457626?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 });

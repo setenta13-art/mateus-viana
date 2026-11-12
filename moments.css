@@ -51,6 +51,35 @@
 .stage-image { margin-top: 3rem; }
 .booking { padding-top: 3.5rem; }
 
+.site-watermark {
+  position: fixed;
+  inset: 0 0 0 auto;
+  z-index: 0;
+  width: min(42vw, 620px);
+  background: url('assets/mateus-marca.webp') right bottom / contain no-repeat;
+  opacity: .035;
+  filter: grayscale(1);
+  pointer-events: none;
+}
+
+main, footer { position: relative; z-index: 1; }
+.about .eyebrow, .shows .eyebrow { color: #666700; font-weight: 800; }
+.numbers-head { display: block; }
+.numbers-head h2 { margin-top: .75rem; }
+.proof-head { grid-template-columns: minmax(0, .9fr) minmax(260px, .55fr); align-items: center; }
+.proof-head > p { padding-left: 1.25rem; border-left: 2px solid var(--acid); font-weight: 600; }
+.stage-image img { filter: saturate(.8) contrast(1.08); object-position: 50% 32%; }
+
+.choice-fieldset { margin: 0 0 2rem; padding: 0 0 2rem; border: 0; border-bottom: 1px solid #353630; }
+.choice-fieldset legend { margin-bottom: 1rem; color: var(--paper); font: 1rem var(--display); text-transform: uppercase; letter-spacing: .03em; }
+.booking-options { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; }
+.booking-choice { margin: 0 !important; }
+.booking-choice input { position: absolute; opacity: 0; pointer-events: none; }
+.booking-choice span { display: flex; align-items: center; min-height: 46px; padding: .75rem .9rem; border: 1px solid #3b3c36; color: #c8c8c0; font-size: .78rem; letter-spacing: .02em; text-transform: none; cursor: pointer; }
+.booking-choice span::before { content: ''; width: 14px; height: 14px; margin-right: .65rem; border: 1px solid #77786f; border-radius: 50%; flex: none; }
+.booking-choice input:checked + span { border-color: var(--acid); color: var(--paper); background: rgba(241,239,85,.07); }
+.booking-choice input:checked + span::before { background: var(--acid); box-shadow: inset 0 0 0 3px #11120f; }
+
 .proof {
   overflow: hidden;
   background: #11120f;
@@ -164,6 +193,7 @@
   .proof-comments { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
   .proof-comments .proof-shot:nth-child(even) { transform: none; }
   .reel-card { width: min(100%, 430px); margin-inline: auto; }
+  .booking-options { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
